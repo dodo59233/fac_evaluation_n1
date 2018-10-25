@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "Bernina";
+    src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2"),
+    url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gotham HTF";
+    src: url("../fonts/GothamHTF-Book.woff2") format("woff2"),
+    url("../fonts/GothamHTF-Book.woff2") format("woff2");
+}
+
+
+
+body{
+    font-family: "Bernina", Arial, sans-serif;
+    background-color: #f7ffff;
+    color: #084852;
+    margin: 0;
+}
+
+.backgroundImg{
+    width: 100%;
+    object-fit: cover;
+}
+
+.bloc-reduc{
+    position: absolute;
+    top: 65px;
+    right: 5%;
+    background-color: #810426;
+    color: white;
+    width: 200px;
+    transform: rotate(23deg);
+    padding: 0px 12px;
+    border-radius: 5px;
+    font-family: "Gotham HTF", Arial, sans-serif;
+}
+
+.bloc-reduc p{
+    margin: 8px 0px;
+}
+
+.bloc-reduc em{
+    font-style: normal;
+    font-size: 8px;
+}
+
+.relative{
+    position: relative;
+}
+
+.bande-img{
+    position: absolute;
+    bottom: 20px;
+    background-color: #ffffff73;
+    width: 100%;
+}
+
+.bande-img h3{
+    margin: 7px 20px;
+    color: white;
+}
+
+.bande-img em{
+    font-style: normal;
+    font-size: 14px;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button{
+    color: #084852;
+    text-decoration: none;
+    border: 1px solid #6f7877;
+    height: 22px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-family: "Gotham HTF", Arial, sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    text-align: center;
+    font-size: 29px;
+}
+
+.text{
+    text-align: center;
+}
+
+.ice-exp h4{
+    text-align: right;
+    margin-right: 10px;
+    float: left;
+    letter-spacing: 8px;
+}
+
+.ice-exp span{
+    float: left;
+    margin-top: 15px;
+}
+
+.ice-exp{
+    float: right;
+    font-family: "Gotham HTF", Arial, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.flexbox-picto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox-picto img{
+    width: 160px;
+    object-fit: contain;
+    border-radius: 100px;
+}
+
+.flexbox-picto div h4{
+    text-align: center;
+    font-family: "Gotham HTF", Arial, sans-serif;
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 98%;
+    }
+
+    .flexbox-picto{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flexbox-picto img{
+        width: 160px;
+        object-fit: contain;
+        border-radius: 100px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .flexbox-picto div{
+        width: 50%;
+    }
+
+    .ice-exp{
+        float: left;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .flexbox-picto{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .flexbox-picto div{
+        width: 100%;
+    }
+
+    .order-mobile{
+        order: 2;
+    }
+
+}
